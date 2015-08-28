@@ -6,6 +6,7 @@ php:
 env:
   - FEDORA_VERSION="3.6.2"
   - FEDORA_VERSION="3.7.0"
+  - FEDORA_VERSION="3.8.1"
 # broken right now, should be fixed.
 #  - FEDORA_VERSION="3.5"
 before_script:
@@ -21,5 +22,5 @@ before_script:
   - sleep 10
 script:
   - phpunit -c tests/travis.xml tests/
-notifications:
-  irc: "irc.freenode.org#islandora"
+#notifications:
+#  irc: "irc.freenode.org#islandora"
