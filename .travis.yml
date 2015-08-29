@@ -20,7 +20,7 @@ before_script:
   - export JAVA_OPTS="-Xms1024m -Xmx1024m -XX:MaxPermSize=512m -XX:+CMSClassUnloadingEnabled -Djavax.net.ssl.trustStore=$CATALINA_HOME/fedora/server/truststore -Djavax.net.ssl.trustStorePassword=tomcat"
   - ./bin/startup.sh
   - cd ..
-  - sleep 10
+  - sleep 40
 script:
   - phpunit -c tests/travis.xml tests/
 after_failure:
