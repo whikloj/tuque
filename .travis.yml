@@ -26,5 +26,6 @@ script:
   - phpunit -c tests/travis.xml tests/
 after_failure:
   - cat /home/travis/build/ruebot/tuque/islandora_tomcat/fedora/server/logs/fedora.log
+  - cat /home/travis/build/ruebot/tuque/islandora_tomcat/logs/catalina.out
 #notifications:
 #  irc: "irc.freenode.org#islandora"
