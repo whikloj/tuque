@@ -18,6 +18,7 @@ before_script:
   - cd islandora_tomcat
   - pwd
   - export CATALINA_HOME='.'
+  - export FEDORA_HOME='./fedora'
   - export JAVA_OPTS="-Xms1024m -Xmx1024m -XX:MaxPermSize=512m -XX:+CMSClassUnloadingEnabled -Djavax.net.ssl.trustStore=$CATALINA_HOME/fedora/server/truststore -Djavax.net.ssl.trustStorePassword=tomcat"
   - ./bin/startup.sh
   - cd ..
